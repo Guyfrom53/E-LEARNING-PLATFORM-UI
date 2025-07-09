@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Learning Platform</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>E-LEARNING PLATFORM</h1>
+  </header>
+
+  <main>
+    <section class="course-list">
+      <h2>Available Courses</h2>
+      <div class="course-card">
+        <img src="img.webp" alt="Course 1">
+        <div>
+          <h3>HTML & CSS Basics</h3>
+          <p>Learn the fundamentals of web development.</p>
+          <progress value="70" max="100"></progress>
+          <p>Progress: 70%</p>
+          <button onclick="playVideo('https://www.youtube.com/embed/UB1O30fR-EE')">Watch Video</button>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <img src="img 2.webp" alt="Course 2">
+        <div>
+          <h3>JavaScript Essentials</h3>
+          <p>Understand core concepts of JavaScript.</p>
+          <progress value="40" max="100"></progress>
+          <p>Progress: 40%</p>
+          <button onclick="playVideo('https://www.youtube.com/embed/W6NZfCO5SIk')">Watch Video</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-player">
+      <h2>Course Video</h2>
+      <iframe id="videoFrame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 E-Learning Platform. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
